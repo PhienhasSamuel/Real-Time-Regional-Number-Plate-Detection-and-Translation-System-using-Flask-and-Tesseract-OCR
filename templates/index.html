@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Number Plate Detection</title>
+</head>
+<body>
+    <h1>📷 Vehicle Number Plate Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="600">
+    <form method="POST" action="/capture">
+        <button type="submit">📸 Capture Image</button>
+    </form>
+</body>
+</html>

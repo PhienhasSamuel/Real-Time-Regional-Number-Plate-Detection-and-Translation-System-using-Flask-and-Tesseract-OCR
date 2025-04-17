@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation History</title>
+</head>
+<body>
+    <h1>History</h1>
+    {% for row in data %}
+        <hr>
+        <img src="{{ row[1] }}" width="300"><br>
+        <b>Original:</b> {{ row[2] }}<br>
+        <b>Translated:</b> {{ row[3] }}<br>
+        <b>Time:</b> {{ row[4] }}<br>
+    {% endfor %}
+    <br><a href="{{ url_for('index') }}">Go to Home</a>
+</body>
+</html>
